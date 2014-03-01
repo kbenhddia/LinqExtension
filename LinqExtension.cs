@@ -170,7 +170,6 @@ namespace LinqExtension
                                                 Expression.Constant(value.ToString().ToUpper()));
 
                             return Expression.Lambda<Func<T, bool>>(Out, p);
-                            // return Expression.Lambda<Func<T, bool>>(Expression.Equal(body, Expression.Constant(value, body.Type)), p);
 
                             #endregion
                         }
@@ -318,14 +317,12 @@ namespace LinqExtension
                         }
                     default:
                         {
-                            //MessageBox.Show(member + " son type n'est pas définie ou il est un champ non valide", "Solutions Plus");
                             return null;
                         }
                 }
             }
             else
             {
-                //MessageBox.Show(member + " n'est pas un champ valide");
                 return null;
             }
         }
