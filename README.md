@@ -54,7 +54,8 @@ If NationalIDNumber.lenght  ==8
 If HireDate <= DateTime.Now
 </li>
 </ul><br>
-To create your application, and to ensure combinations required to create the final query; your code will contain multiple IF ... Else .It will be a hard work and we get an ambiguous code.<br>
+To ensure the chosen combination to obtain the final request; your code will contain multiple IF ... Else .It will be a hard work and we get an ambiguous code.<br>
+
 ```csharp
 if (!String.IsNullOrEmpty(input_Title))
 {
@@ -72,7 +73,8 @@ if (input_NationalIDNumber>0)
 ```
 
 <b>Solution 1: Finding by criteria</b><br>
-The solution with LinqExtension is simply to call WhereIf, this method is created to find with a number of criteria known in advance (window researching for example).<br>
+
+The solution with LinqExtension is simply to call WhereIf, this method is created to search with a number of criteria known in advance. (window researching for example).<br>
 ```csharp
 using (var context = new workEntities())
      {
@@ -93,7 +95,7 @@ using (var context = new workEntities())
 ```
 <br>
 <br>Solution 2 (Advanced Topic): Dynamic Linq</b><br>
-We don’t know the number of parameters introduced in advance and we want to do a blind finding 
+We don’t know the number of parameters introduced in advance and we want to do a blind research. 
 <ul>
 <li> No criteria => select * from Emloyee  </li>
 <li>One criterion ($ 1) => select * from Employee where col1 = $ 1  </li>
@@ -101,7 +103,7 @@ We don’t know the number of parameters introduced in advance and we want to do
 <li>Three criteria....</li>
 </ul><br>
 
-CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses Dictionary <string, List <string>> to collect research information.<br>
+CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses ```csharp Dictionary <string, List <string>> ``` to collect the research information.<br>
 This method implements [LinqKit  library](http://www.albahari.com/nutshell/linqkit.aspx ).<br>
 ```csharp
 using (var context = new workEntities() )
@@ -131,6 +133,6 @@ using (var context = new workEntities() )
 ![](http://s8.postimg.org/piesznj1h/dunamiclinq.png)<br><br>
 
 <b>You need to know</b><br>
-This code does not support joins; you can use views in this case.<br>
+This code doesn't support joins; you can use views in this case.<br>
 <b>Licensing</b><br>
-LinqExtension is free. The source code is issued under a permissive free license, which means you can modify it as you please, and incorporate it into your own commercial or non-commercial software. Enjoy!
+LinqExtension is free. The source code is issued under a permissive free license, which means you can modify it as you like, and incorporate it into your own commercial or non-commercial software. Enjoy!
