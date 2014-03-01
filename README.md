@@ -103,7 +103,7 @@ We don’t know the number of parameters introduced in advance and we want to do
 <li>Three criteria....</li>
 </ul><br>
 
-CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses ```csharp Dictionary <string, List <string>> ``` to collect the research information.<br>
+CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses ``` Dictionary <string, List <string>> ``` to collect the research information.<br>
 This method implements [LinqKit  library](http://www.albahari.com/nutshell/linqkit.aspx ).<br>
 ```csharp
 using (var context = new workEntities() )
