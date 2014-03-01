@@ -28,7 +28,6 @@ namespace LinqExtension
         private static Type GetTypeFromString(string type)
         {
             object obj;
-            //  var u = Type.GetType("System.String");
             var u = Type.GetType("System." + type);
             if (u == typeof(string))
             {
