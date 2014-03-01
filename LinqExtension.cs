@@ -1,4 +1,3 @@
-
 /*
  * Licensing :
  * LinqExtension is free.
@@ -7,7 +6,7 @@
  */
  
 /*
- * @author  Ben Heddia Khalil
+ * @author  Ben Heddia Khalil    benhddia-khalil@live.fr
  * @version 1.0, 01/03/2014 22:30
  * @.NET FRAMEWORk 3.5 +
  */
