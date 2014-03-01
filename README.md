@@ -128,6 +128,9 @@ using (var context = new workEntities() )
 ```
 <br>
 <b>The query result:</b>
-![](http://s8.postimg.org/piesznj1h/dunamiclinq.png)
+![](http://s8.postimg.org/piesznj1h/dunamiclinq.png)<br><br>
+
+<b>You need to know</b><br>
+This code does not support joins; you can use views in this case.<br>
 <b>Licensing</b><br>
 LinqExtension is free. The source code is issued under a permissive free license, which means you can modify it as you please, and incorporate it into your own commercial or non-commercial software. Enjoy!
