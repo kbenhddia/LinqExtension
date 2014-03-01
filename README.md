@@ -55,7 +55,7 @@ If HireDate <= DateTime.Now
 </li>
 </ul><br>
 To create your application, and to ensure combinations required to create the final query; your code will contain multiple IF ... Else .It will be a hard work and we get an ambiguous code.<br>
-```python
+```csharp
 if (!String.IsNullOrEmpty(input_Title))
 {
 	…
@@ -73,7 +73,7 @@ if (input_NationalIDNumber>0)
 
 <b>Solution 1: Finding by criteria</b><br>
 The solution with LinqExtension is simply to call WhereIf, this method is created to find with a number of criteria known in advance (window researching for example).<br>
-```python
+```csharp
 using (var context = new workEntities())
      {
                 var input_EmployeeID = 5;
@@ -103,7 +103,7 @@ We don’t know the number of parameters introduced in advance and we want to do
 
 CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses Dictionary <string, List <string>> to collect research information.<br>
 This method implements [LinqKit  library](http://www.albahari.com/nutshell/linqkit.aspx ).<br>
-```python
+```csharp
 using (var context = new workEntities() )
 {
 
