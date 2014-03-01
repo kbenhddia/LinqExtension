@@ -7,7 +7,7 @@
  
 /*
  * @author  Ben Heddia Khalil    benhddia-khalil@live.fr
- * @version 1.0, 01/03/2014 22:30
+ * @version 1.0, 01/03/2014 
  * @.NET FRAMEWORk 3.5 +
  */
 
