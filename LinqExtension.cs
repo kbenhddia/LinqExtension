@@ -1,4 +1,4 @@
-```csharp
+
 /*
  * Licensing :
  * LinqExtension is free.
@@ -399,4 +399,3 @@ namespace LinqExtension
         }
     }
 }
-```
