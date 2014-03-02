@@ -1,7 +1,7 @@
-LinqExtension
+LINQExtension
 =============
 
-LinqExtension is a free solution for Dynamic Linq to Entities &amp; querying by criteria in entity framework
+LINQExtension is a free solution for Dynamic Linq to Entities &amp; querying by criteria in entity framework
 
 <h3> Dynamic Linq to Entities & querying by criteria in entity framework </h3><br>
 We assume the Employee table<br>
@@ -74,7 +74,7 @@ if (input_NationalIDNumber>0)
 
 <b>Solution 1: Finding by criteria</b><br>
 
-The solution with LinqExtension is simply to call WhereIf, this method is created to search with a number of criteria known in advance. (window researching for example).<br>
+The solution with LINQExtension is simply to call WhereIf, this method is created to search with a number of criteria known in advance. (window researching for example).<br>
 ```csharp
 using (var context = new workEntities())
      {
@@ -104,7 +104,7 @@ We don’t know the number of parameters introduced in advance and we want to do
 </ul><br>
 
 CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses ``` Dictionary <string, List <string>> ``` to collect the research information.<br>
-This method implements [LinqKit  library](http://www.albahari.com/nutshell/linqkit.aspx ).<br>
+This method implements [LinqKit] library (http://www.albahari.com/nutshell/linqkit.aspx ).<br>
 ```csharp
 using (var context = new workEntities() )
 {
@@ -135,4 +135,4 @@ using (var context = new workEntities() )
 <b>You need to know</b><br>
 This code doesn't support joins; you can use views in this case.<br>
 <b>Licensing</b><br>
-LinqExtension is free. The source code is issued under a permissive free license, which means you can modify it as you like, and incorporate it into your own commercial or non-commercial software. Enjoy!
+LINQExtension is free. The source code is issued under a permissive free license, which means you can modify it as you like, and incorporate it into your own commercial or non-commercial software. Enjoy!
