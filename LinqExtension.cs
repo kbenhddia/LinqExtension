@@ -1,6 +1,5 @@
 /*
  * Licensing :
- * LinqExtension is free.
  * LINQExtension is free.
  * The source code is issued under a permissive free license, which means you can modify it as you like, and incorporate it into your own commercial or non-commercial software.
  * Enjoy!
