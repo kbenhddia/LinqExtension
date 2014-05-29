@@ -98,9 +98,9 @@ using (var context = new workEntities())
 We don’t know the number of parameters introduced in advance and we want to do a blind research. 
 <ul>
 <li> No criteria => select * from Emloyee  </li>
-<li>One criterion ($ 1) => select * from Employee where col1 = $ 1  </li>
-<li>Two criteria ($ 1, $ 2) => select * from Employee where col1 = $ 1 and col2 = $ 2 </li>
-<li>Three criteria....</li>
+<li>One criteria ($ 1) => select * from Employee where col1 = $ 1  </li>
+<li>Two criterias ($ 1, $ 2) => select * from Employee where col1 = $ 1 and col2 = $ 2 </li>
+<li>Three criterias....</li>
 </ul><br>
 
 CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses ``` Dictionary <string, List <string>> ``` to collect the research information.<br>
