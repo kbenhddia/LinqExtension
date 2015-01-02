@@ -326,10 +326,10 @@ namespace LinqExtension
                 return null;
             }
         }
-        //** Pour Enumeration
+        //** For Enumeration
         public static IEnumerable<T> CollectionToQuery<T>(this IEnumerable<T> list, Dictionary<string, List<string>> dictionary)
         {
-            //** Pour IEnumerable
+            //**  IEnumerable implementation
             ParameterExpression pe = Expression.Parameter(typeof(T), "entity");
 
             Expression left = Expression.Constant(1, typeof(int));
@@ -355,9 +355,10 @@ namespace LinqExtension
 
             return t;
         }
-        //** Pour IQueryable
+        //** For IQueryable
         public  static IQueryable<T> CollectionToQuery<T>(this IQueryable<T> entity, Dictionary<string, List<string>> dictionary)
-        {//** Pour IQueryable
+        {
+         //**  IQueryable implementation
             ParameterExpression pe = Expression.Parameter(typeof(string), "entity");
             var predicate = PredicateBuilder.True<T>();
             foreach (var data in dictionary)
