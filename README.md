@@ -94,7 +94,7 @@ using (var context = new workEntities())
 
 ```
 <br>
-<br>Solution 2 (Advanced Topic): Dynamic Linq</b><br>
+<br><b>Solution 2 (Advanced Topic): Dynamic Linq</b><br>
 We don’t know the number of parameters introduced in advance and we want to do a blind research. 
 <ul>
 <li> No criteria => select * from Emloyee  </li>
