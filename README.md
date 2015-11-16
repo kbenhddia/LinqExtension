@@ -1,7 +1,8 @@
 LINQExtension
 =============
 
-LINQExtension is a free solution for Dynamic Linq to Entities &amp; querying by criteria in entity framework
+LINQExtension is a free solution for Dynamic Linq to Entities &amp; querying by criteria in entity framework<br>
+It may be helpful for who he has problem with linq as langage
 
 <h3> Dynamic Linq to Entities & querying by criteria in entity framework </h3><br>
 We have this Employee table<br>
@@ -54,7 +55,7 @@ If NationalIDNumber.lenght  ==8
 If HireDate <= DateTime.Now
 </li>
 </ul><br>
-To ensure the chosen combination to obtain the final request; your code will contain multiple IF ... Else .It will be a hard to write and we get an ambiguous code.<br>
+to obtain your final request; your code will contain multiple IF ... Else .However, It will be a hard to write and we got an ambiguous code.<br>
 
 ```csharp
 if (!String.IsNullOrEmpty(input_Title))
@@ -74,7 +75,7 @@ if (input_NationalIDNumber>0)
 
 <b>Solution 1: Finding by criteria</b><br>
 
-The solution with LINQExtension is simply to call WhereIf, this method is created to search with a number of criteria known in advance. (window researching for example).<br>
+The solution with LINQExtension is simply to call WhereIf, this method is created to search with a number of criteria known in advance. <br>
 ```csharp
 using (var context = new workEntities())
      {
@@ -103,7 +104,7 @@ We don’t know the number of parameters introduced in advance and we want to do
 <li>Three criterias....</li>
 </ul><br>
 
-CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses ``` Dictionary <string, List <string>> ``` to collect the research information.<br>
+CollectionToQuery is created for this kind of query, it doesn’t depend on number of parameters, it uses ``` Dictionary <string, List <string>> ``` to collect the information's research.<br>
 This method implements [LinqKit] library (http://www.albahari.com/nutshell/linqkit.aspx ).<br>
 ```csharp
 using (var context = new workEntities() )
