@@ -55,7 +55,7 @@ If NationalIDNumber.lenght  ==8
 If HireDate <= DateTime.Now
 </li>
 </ul><br>
-to obtain your final request; your code will contain multiple IF ... Else .However, It will be a hard to write and we got an ambiguous code.<br>
+to obtain your final request; your code will contain multiple IF ... Else .However, It will be hard to write and we got an ambiguous code.<br>
 
 ```csharp
 if (!String.IsNullOrEmpty(input_Title))
