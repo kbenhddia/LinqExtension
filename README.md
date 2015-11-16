@@ -75,8 +75,8 @@ if (input_NationalIDNumber>0)
 
 <b>Solution 1: Finding by criteria</b><br>
 
-This solution called LINQExtension is simple to use, 
-it's an extension method created to search with a number of criteria known in advance. <br>
+This solution called WhereIf is simple to use, 
+it's an extension method created to search with a number of criterias known in advance. <br>
 ```csharp
 using (var context = new workEntities())
      {
