@@ -5,7 +5,7 @@ LINQExtension is a free solution for Dynamic Linq to Entities &amp; querying by 
 It may be helpful for who he has problems with linq as langage
 
 <h3> Dynamic Linq to Entities & querying by criteria in entity framework </h3><br>
-We have this Employee table<br>
+we are using this Employee table as an example<br>
 <table>
 <tr>
 <th>Column</th><th>		Type</th>
