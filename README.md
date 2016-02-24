@@ -29,7 +29,7 @@ we are using this Employees table as an example<br>
 <td>Salary</td><td>	float</td>
 </tr>
 <tr>
-<td>VacationHours</td><td>	int</td>
+<td>sickLeaveHours</td><td>	int</td>
 </tr>
 <tr>
 <td>VacationHours</td><td>	int</td>
